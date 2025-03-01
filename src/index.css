@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0F9D58;
+  --secondary: #F4B400;
+  --dark: #1A1A1A;
+  --light: #F9F9F9;
+}
+
+body {
+  @apply font-sans text-dark bg-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md font-medium transition-all duration-300 inline-block text-center;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary/90;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-dark hover:bg-secondary/90;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+}
+
+.nav-link {
+  @apply text-dark hover:text-primary transition-colors duration-200;
+}
+
+.active-nav-link {
+  @apply text-primary font-medium;
+}
